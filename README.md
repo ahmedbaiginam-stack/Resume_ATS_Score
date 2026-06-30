@@ -46,6 +46,15 @@ This project solves it by:
 - AI Layer → Ollama LLM integration
 
 ---
+## 📸 Screenshots
+
+| Dashboard | Upload | AI Feedback |
+|----------|--------|--------------|
+| ![](screenshots/dashboard.png) | ![](screenshots/upload.png) | ![](screenshots/feedback.png) |
+
+| Admin Panel | Jobs Page | History |
+|-------------|----------|---------|
+| ![](screenshots/admin_dashboard.png) | ![](screenshots/jobs.png) | ![](screenshots/history.png) |
 
 ## 🛠️ Tech Stack
 
