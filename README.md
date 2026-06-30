@@ -120,30 +120,29 @@ This project integrates **Ollama LLM (Local AI Model)** to generate intelligent 
 
 ## 📸 Screenshots
 
-### 🏠 Dashboard
-![Dashboard](src/main/resources/static/screenshots/dashboard.png)
+### 🏠 User Dashboard
+<img src="src/main/resources/static/screenshots/dashboard.png" width="750"/>
 
 ### 📤 Upload Resume
-![Upload](src/main/resources/static/screenshots/upload.png)
+<img src="src/main/resources/static/screenshots/upload.png" width="750"/>
 
 ### 🔍 Jobs Page
-![Jobs](src/main/resources/static/screenshots/jobs.png)
+<img src="src/main/resources/static/screenshots/jobs.png" width="750"/>
 
 ### 🤖 AI Feedback
-![Feedback](src/main/resources/static/screenshots/feedback.png)
+<img src="src/main/resources/static/screenshots/feedback.png" width="750"/>
 
 ### 📚 Feedback History
-![History](src/main/resources/static/screenshots/feedback_history.png)
+<img src="src/main/resources/static/screenshots/feedback_history.png" width="750"/>
 
 ### 📊 Analytics
-![Analytics](src/main/resources/static/screenshots/analytics.png)
+<img src="src/main/resources/static/screenshots/analytics.png" width="750"/>
 
 ### 🧑‍💼 Admin Dashboard
-![Admin](src/main/resources/static/screenshots/admin_dashboard.png)
+<img src="src/main/resources/static/screenshots/admin_dashboard.png" width="750"/>
 
 ### 📈 Admin Analytics Detail
-![Admin Analytics](src/main/resources/static/screenshots/admin_analytics.png)
-
+<img src="src/main/resources/static/screenshots/admin_analytics.png" width="750"/>
 ---
 
 ## 📁 Project Structure
