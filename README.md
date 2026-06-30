@@ -1,96 +1,68 @@
-# 📄 Resume ATS (Applicant Tracking System) with AI Feedback Engine (Ollama AI)
+# 🚀 Resume ATS (Applicant Tracking System) with AI Feedback Engine
 
-## 🚀 Overview
-
-Resume ATS is an intelligent full-stack web application designed to automate resume screening, parsing, and job matching using **Spring Boot + MySQL + AI (Ollama LLM)**.
-
-The system extracts structured data from resumes (PDF), matches it with job descriptions, and generates **AI-powered feedback** to help candidates improve their profiles and increase job matching accuracy.
-
-This project simulates a real-world Applicant Tracking System (ATS) used in modern recruitment platforms.
-
----
-
-## 🎯 Problem Statement
-
-Manual resume screening is time-consuming, inconsistent, and lacks personalized feedback.
-
-This project solves it by:
-- Automating resume parsing
-- Matching skills with job descriptions
-- Generating AI-based feedback using Ollama LLM
-- Providing role-based dashboards (Admin/User)
+![Java](https://img.shields.io/badge/Java-17-blue?style=for-the-badge)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-3.0-green?style=for-the-badge)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge)
+![Thymeleaf](https://img.shields.io/badge/Thymeleaf-Frontend-yellowgreen?style=for-the-badge)
+![AI](https://img.shields.io/badge/Ollama-AI-purple?style=for-the-badge)
+![Status](https://img.shields.io/badge/Project-Completed-success?style=for-the-badge)
 
 ---
 
-## ✨ Key Features
+## 📌 Overview
 
-- 📤 Resume Upload (PDF)
-- 📄 Resume Parsing (Apache Tika)
-- 🧠 Skill Extraction
-- 🔍 Job Matching System
-- 🤖 AI Feedback using Ollama
-- 👤 Role-Based Access Control
-- 📊 Admin Dashboard
-- 📁 Resume Management System
-- 📥 Export Data (CSV/PDF)
+**Resume ATS** is an AI-powered full-stack web application designed to automate resume screening, skill extraction, and job matching using:
+
+- Spring Boot (Backend)
+- MySQL (Database)
+- Thymeleaf (Frontend)
+- Ollama AI (LLM-based feedback engine)
+
+It intelligently analyzes resumes and provides **AI-driven career improvement suggestions**, simulating real-world ATS systems used in modern companies.
+
+---
+
+## 🎯 Key Features
+
+- 📤 Upload Resume (PDF)
+- 📄 Automatic Resume Parsing (Apache Tika)
+- 🧠 Skill Extraction Engine
+- 🔍 Job Description Matching System
+- 🤖 AI Feedback using Ollama LLM
+- 👤 Role-Based Access (Admin / User)
+- 📊 Admin Analytics Dashboard
 - 📚 Feedback History Tracking
+- 📥 Export Reports (CSV / PDF)
+- 🔎 Resume Search (Name, Skills, Email)
 
 ---
 
 ## 🏗️ System Architecture
 
-- Controller Layer → Request handling
-- Service Layer → Business logic + AI processing
-- Repository Layer → Database access (JPA)
-- View Layer → Thymeleaf UI
-- AI Layer → Ollama LLM integration
-
----
-## 📸 Screenshots
-
-Below are the key screens of the Resume ATS system:
+```
+Controller Layer  → Handles HTTP Requests
+Service Layer     → Business Logic + AI Processing
+Repository Layer  → Database Interaction (JPA)
+View Layer        → Thymeleaf UI
+AI Layer          → Ollama LLM Integration
+```
 
 ---
 
-### 🏠 Dashboard
-![Dashboard](src/main/resources/static/screenshots/dashboard.png)
+## 🤖 AI Integration (Ollama)
+
+This project integrates **Ollama LLM (Local AI Model)** to generate intelligent resume feedback.
+
+### AI Capabilities:
+- Resume quality evaluation
+- Skill gap detection
+- Job matching score
+- Personalized improvement suggestions
+- Career guidance recommendations
 
 ---
 
-### 📤 Resume Upload Page
-![Upload Resume](src/main/resources/static/screenshots/upload.png)
-
----
-
-### 🔍 Jobs Listing Page
-![Jobs](src/main/resources/static/screenshots/jobs.png)
-
----
-
-### 🤖 AI Feedback Result
-![Feedback](src/main/resources/static/screenshots/feedback.png)
-
----
-
-### 📚 Feedback History
-![Feedback History](src/main/resources/static/screenshots/feedback_history.png)
-
----
-
-### 📊 Admin Analytics Overview
-![Analytics](src/main/resources/static/screenshots/analytics.png)
-
----
-
-### 🧑‍💼 Admin Dashboard
-![Admin Dashboard](src/main/resources/static/screenshots/admin_dashboard.png)
-
----
-
-### 📈 Admin Analytics (Detailed View)
-![Admin Analytics](src/main/resources/static/screenshots/admin_analytics.png)
-
-## 🛠️ Tech Stack
+## ⚙️ Tech Stack
 
 ### Backend
 - Java 17+
@@ -107,57 +79,70 @@ Below are the key screens of the Resume ATS system:
 ### Database
 - MySQL
 
-### AI
-- Ollama LLM (Local AI Model)
+### AI Engine
+- Ollama LLM (Local AI)
 
 ### Libraries
-- Apache Tika
-- Apache Commons CSV
-- iText PDF
-
----
-
-## 🤖 AI Integration (Ollama)
-
-This project uses **Ollama AI (Local LLM)** to generate intelligent resume feedback.
-
-### AI Features:
-- Resume quality analysis
-- Skill gap detection
-- Job match scoring
-- Personalized suggestions
-- Career improvement tips
+- Apache Tika (PDF Parsing)
+- Apache Commons CSV (Export)
+- iText PDF (Reports)
 
 ---
 
 ## 🔄 Workflow
 
-1. User logs in
-2. Uploads resume (PDF)
-3. Apache Tika extracts text
-4. Data is parsed into structured format
-5. User selects job description
-6. System runs:
-   - Skill matching
-   - AI analysis (Ollama)
-7. Feedback is generated
-8. Results displayed + stored
+1. User Login (Spring Security)
+2. Upload Resume (PDF)
+3. Extract Text using Apache Tika
+4. Store structured data in MySQL
+5. Select Job Description
+6. Skill Matching Engine runs
+7. AI Engine (Ollama) generates feedback
+8. Results displayed to user/admin
 
 ---
 
 ## 👥 User Roles
 
-### 🧑 USER
-- Upload resume
-- View AI feedback
-- Check job matching results
-- View history
+### 🧑 User
+- Upload Resume
+- View AI Feedback
+- Check Job Match Results
+- View History
 
-### 👨‍💼 ADMIN
-- Manage resumes
-- View analytics
-- Export reports (CSV/PDF)
-- View feedback history
+### 👨‍💼 Admin
+- Manage All Resumes
+- View Analytics Dashboard
+- Export Data (CSV/PDF)
+- View Feedback Logs
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Dashboard
+![Dashboard](src/main/resources/static/screenshots/dashboard.png)
+
+### 📤 Upload Resume
+![Upload](src/main/resources/static/screenshots/upload.png)
+
+### 🔍 Jobs Page
+![Jobs](src/main/resources/static/screenshots/jobs.png)
+
+### 🤖 AI Feedback
+![Feedback](src/main/resources/static/screenshots/feedback.png)
+
+### 📚 Feedback History
+![History](src/main/resources/static/screenshots/feedback_history.png)
+
+### 📊 Analytics
+![Analytics](src/main/resources/static/screenshots/analytics.png)
+
+### 🧑‍💼 Admin Dashboard
+![Admin](src/main/resources/static/screenshots/admin_dashboard.png)
+
+### 📈 Admin Analytics Detail
+![Admin Analytics](src/main/resources/static/screenshots/admin_analytics.png)
 
 ---
 
@@ -178,32 +163,33 @@ com.Resume.ATS
 
 ---
 
-## ⚙️ Setup Instructions
+## 🚀 Setup Instructions
 
-### 1. Clone Project
+### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/your-username/resume-ats.git
 ```
 
-### 2. Open in IDE
-- IntelliJ / Eclipse
+### 2️⃣ Import Project
+- Open IntelliJ / Eclipse
 - Import as Maven Project
 
-### 3. Configure Database
+### 3️⃣ Configure Database
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/ats_db
 spring.datasource.username=root
 spring.datasource.password=your_password
 ```
 
-### 4. Run Project
+### 4️⃣ Run Project
 ```bash
 mvn spring-boot:run
 ```
 
 ---
 
-## 🌐 Access
+## 🌐 Application URL
+
 ```
 http://localhost:8080
 ```
@@ -217,6 +203,7 @@ http://localhost:8080
 - Email Notifications
 - Cloud Deployment (AWS / Azure)
 - Advanced NLP Skill Detection
+- Real-time AI Chat Assistant
 
 ---
 
@@ -224,14 +211,14 @@ http://localhost:8080
 
 **Ahmedbaig Inamdar**  
 Full Stack Java Developer  
-Spring Boot | AI | MySQL | Web Development
+Spring Boot | MySQL | AI (Ollama) | Web Development
 
 ---
 
 ## ⭐ Highlights
 
-✔ AI-powered ATS  
-✔ Real-world recruitment system  
+✔ AI-powered ATS system  
+✔ Real-world recruitment automation  
+✔ Production-grade Spring Boot architecture  
 ✔ Ollama LLM integration  
-✔ Secure role-based access  
-✔ Production-level architecture
+✔ Role-based secure system
