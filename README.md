@@ -48,13 +48,47 @@ This project solves it by:
 ---
 ## 📸 Screenshots
 
-| Dashboard | Upload | AI Feedback |
-|----------|--------|--------------|
-| ![](screenshots/dashboard.png) | ![](screenshots/upload.png) | ![](screenshots/feedback.png) |
+Below are the key screens of the Resume ATS system:
 
-| Admin Panel | Jobs Page | History |
-|-------------|----------|---------|
-| ![](screenshots/admin_dashboard.png) | ![](screenshots/jobs.png) | ![](screenshots/history.png) |
+---
+
+### 🏠 Dashboard
+![Dashboard](src/main/resources/static/screenshots/dashboard.png)
+
+---
+
+### 📤 Resume Upload Page
+![Upload Resume](src/main/resources/static/screenshots/upload.png)
+
+---
+
+### 🔍 Jobs Listing Page
+![Jobs](src/main/resources/static/screenshots/jobs.png)
+
+---
+
+### 🤖 AI Feedback Result
+![Feedback](src/main/resources/static/screenshots/feedback.png)
+
+---
+
+### 📚 Feedback History
+![Feedback History](src/main/resources/static/screenshots/feedback_history.png)
+
+---
+
+### 📊 Admin Analytics Overview
+![Analytics](src/main/resources/static/screenshots/analytics.png)
+
+---
+
+### 🧑‍💼 Admin Dashboard
+![Admin Dashboard](src/main/resources/static/screenshots/admin_dashboard.png)
+
+---
+
+### 📈 Admin Analytics (Detailed View)
+![Admin Analytics](src/main/resources/static/screenshots/admin_analytics.png)
 
 ## 🛠️ Tech Stack
 
