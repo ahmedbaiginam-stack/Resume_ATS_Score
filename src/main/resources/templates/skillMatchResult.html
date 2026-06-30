@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume vs Job Skill Matching</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-4">
+    <h2>Resume vs Job Skill Matching</h2>
+
+    <p><strong>Resume Skills:</strong> <span th:text="${result.resumeSkills}">[java, sql]</span></p>
+    <p><strong>Job Required Skills:</strong> <span th:text="${result.jobRequiredSkills}">[spring boot, java]</span></p>
+    <p><strong>Matched Skills:</strong> <span th:text="${result.matchedSkills}">[java]</span></p>
+    <p><strong>Missing Recommended Skills:</strong>
+        <ul>
+            <li th:each="skill : ${result.missingSkills}" th:text="${skill}">spring boot</li>
+        </ul>
+    </p>
+    <p><strong>Match Score:</strong> <span th:text="${result.score + '%'}">80%</span></p>
+    <p><strong>Feedback:</strong> <span th:text="${result.feedback}">Great match</span></p>
+    <p><strong>Extra Skills:</strong> <span th:text="${result.extraSkills}">[html,css]</span></p>
+    <a href="/" class="btn btn-secondary">Go Back to Home</a>
+</div>
+</body>
+</html>
