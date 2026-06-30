@@ -166,7 +166,7 @@ com.Resume.ATS
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/your-username/resume-ats.git
+git clone https://github.com/ahmedbaiginam-stack/Resume_ATS_Score
 ```
 
 ### 2️⃣ Import Project
