@@ -1,86 +1,127 @@
-📄 Resume ATS (Applicant Tracking System) with AI Feedback Engine
-🚀 Overview
+# 📄 Resume ATS (Applicant Tracking System) with AI Feedback Engine (Ollama AI)
 
-The Resume ATS (Applicant Tracking System) is a full-stack web application designed to automate resume screening, skill extraction, and job matching using Spring Boot + AI (Ollama LLM).
+## 🚀 Overview
 
-It allows users to upload resumes, extract structured information, compare it with job descriptions, and generate intelligent AI-powered feedback to improve resume quality and job matching accuracy.
+Resume ATS is an intelligent full-stack web application designed to automate resume screening, parsing, and job matching using **Spring Boot + MySQL + AI (Ollama LLM)**.
 
-🎯 Key Features
-📤 Upload Resume (PDF format)
-📄 Automatic Resume Parsing using Apache Tika
-🧠 Skill Extraction from resumes
-🔍 Job Description Matching
-🤖 AI-powered Feedback using Ollama LLM
-👤 Role-based Access (Admin / User)
-📊 Resume Analytics Dashboard
-📥 Export Data (CSV & PDF)
-🔎 Search resumes by Name, Email, Skills
-📚 Feedback History Tracking
-🏗️ System Architecture
+The system extracts structured data from resumes (PDF), matches it with job descriptions, and generates **AI-powered feedback** to help candidates improve their profiles and increase job matching accuracy.
 
-The application follows a layered Spring Boot architecture:
+This project simulates a real-world Applicant Tracking System (ATS) used in modern recruitment platforms.
 
-Controller Layer → Handles HTTP Requests
-Service Layer    → Business Logic + AI Integration
-Repository Layer → Database Access (JPA)
-View Layer       → Thymeleaf Templates
-🛠️ Tech Stack
-Backend
-Java 17+
-Spring Boot
-Spring MVC
-Spring Security
-Spring Data JPA
-Frontend
-Thymeleaf
-HTML5
-Bootstrap 5
-Database
-MySQL
-AI Integration
-Ollama LLM (Local AI Model)
-Libraries
-Apache Tika (PDF Parsing)
-Apache Commons CSV (Export CSV)
-iText PDF (PDF Reports)
-🤖 AI Feature (Ollama Integration)
+---
 
-This project uses Ollama AI to enhance resume analysis.
+## 🎯 Problem Statement
 
-AI Capabilities:
-Resume quality evaluation
-Skill gap analysis
-Job-fit scoring
-Personalized improvement suggestions
-Human-like feedback generation
+Manual resume screening is time-consuming, inconsistent, and lacks personalized feedback.
 
-This makes the system more advanced than traditional keyword-based ATS systems.
+This project solves it by:
+- Automating resume parsing
+- Matching skills with job descriptions
+- Generating AI-based feedback using Ollama LLM
+- Providing role-based dashboards (Admin/User)
 
-🔄 Workflow
-User logs in (Spring Security)
-Uploads Resume (PDF)
-Apache Tika extracts text
-Resume is parsed into structured data
-User selects Job Description
-System compares skills + sends data to Ollama AI
-AI generates feedback report
-Result is displayed and stored
-👥 User Roles
-🧑 User
-Upload resume
-View analysis results
-Check AI feedback
-View history
-👨‍💼 Admin
-Manage all resumes
-View analytics dashboard
-Search resumes
-Export data (CSV/PDF)
-Delete or update resumes
-View feedback history
-📁 Project Structure
+---
+
+## ✨ Key Features
+
+- 📤 Resume Upload (PDF)
+- 📄 Resume Parsing (Apache Tika)
+- 🧠 Skill Extraction
+- 🔍 Job Matching System
+- 🤖 AI Feedback using Ollama
+- 👤 Role-Based Access Control
+- 📊 Admin Dashboard
+- 📁 Resume Management System
+- 📥 Export Data (CSV/PDF)
+- 📚 Feedback History Tracking
+
+---
+
+## 🏗️ System Architecture
+
+- Controller Layer → Request handling
+- Service Layer → Business logic + AI processing
+- Repository Layer → Database access (JPA)
+- View Layer → Thymeleaf UI
+- AI Layer → Ollama LLM integration
+
+---
+
+## 🛠️ Tech Stack
+
+### Backend
+- Java 17+
+- Spring Boot
+- Spring MVC
+- Spring Security
+- Spring Data JPA
+
+### Frontend
+- Thymeleaf
+- HTML5
+- Bootstrap 5
+
+### Database
+- MySQL
+
+### AI
+- Ollama LLM (Local AI Model)
+
+### Libraries
+- Apache Tika
+- Apache Commons CSV
+- iText PDF
+
+---
+
+## 🤖 AI Integration (Ollama)
+
+This project uses **Ollama AI (Local LLM)** to generate intelligent resume feedback.
+
+### AI Features:
+- Resume quality analysis
+- Skill gap detection
+- Job match scoring
+- Personalized suggestions
+- Career improvement tips
+
+---
+
+## 🔄 Workflow
+
+1. User logs in
+2. Uploads resume (PDF)
+3. Apache Tika extracts text
+4. Data is parsed into structured format
+5. User selects job description
+6. System runs:
+   - Skill matching
+   - AI analysis (Ollama)
+7. Feedback is generated
+8. Results displayed + stored
+
+---
+
+## 👥 User Roles
+
+### 🧑 USER
+- Upload resume
+- View AI feedback
+- Check job matching results
+- View history
+
+### 👨‍💼 ADMIN
+- Manage resumes
+- View analytics
+- Export reports (CSV/PDF)
+- View feedback history
+
+---
+
+## 📁 Project Structure
+
+```
 com.Resume.ATS
-│
 ├── controller
 ├── service
 ├── repository
@@ -89,74 +130,65 @@ com.Resume.ATS
 ├── security
 ├── util
 ├── config
-└── templates (Thymeleaf UI)
-📊 Core Modules
-1. Resume Upload
-Upload PDF resumes
-Validate file type
-Store in database
-2. Resume Parsing
-Extract text using Apache Tika
-Parse:
-Name
-Email
-Phone
-Skills
-Experience
-3. Skill Matching Engine
-Matches resume skills with job description
-Calculates similarity score
-4. AI Feedback Engine
-Uses Ollama LLM
-Generates:
-Missing skills
-Improvement suggestions
-Career guidance
-5. Admin Dashboard
-View all resumes
-Export reports
-Manage system data
-📸 Screenshots (Optional)
+└── templates
+```
 
-Add screenshots here if available
+---
 
-/screenshots/dashboard.png
-/screenshots/upload.png
-/screenshots/feedback.png
-⚙️ Setup Instructions
-1. Clone Repository
+## ⚙️ Setup Instructions
+
+### 1. Clone Project
+```bash
 git clone https://github.com/your-username/resume-ats.git
-2. Import Project
-Open in IntelliJ / Eclipse
-Load Maven dependencies
-3. Configure Database
+```
 
-Update application.properties:
+### 2. Open in IDE
+- IntelliJ / Eclipse
+- Import as Maven Project
 
+### 3. Configure Database
+```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/ats_db
 spring.datasource.username=root
 spring.datasource.password=your_password
-4. Run Project
+```
+
+### 4. Run Project
+```bash
 mvn spring-boot:run
-🌐 Access Application
+```
+
+---
+
+## 🌐 Access
+```
 http://localhost:8080
-🚀 Future Enhancements
-AI Resume Ranking System
-Interview Question Generator
-Email notifications for feedback
-Cloud deployment (AWS / Azure)
-Advanced NLP-based skill extraction
-Resume scoring dashboard with charts
-👨‍💻 Author
+```
 
-Ahmed Baig Inamdar
-Full Stack Java Developer
-Spring Boot | AI Integration | Web Applications
+---
 
-⭐ Project Highlights
+## 🚀 Future Enhancements
 
-✔ AI-powered ATS system
-✔ Real-world recruitment automation
-✔ Spring Boot enterprise architecture
-✔ Ollama LLM integration
-✔ Production-level project structure
+- AI Resume Ranking System
+- Interview Question Generator
+- Email Notifications
+- Cloud Deployment (AWS / Azure)
+- Advanced NLP Skill Detection
+
+---
+
+## 👨‍💻 Author
+
+**Ahmedbaig Inamdar**  
+Full Stack Java Developer  
+Spring Boot | AI | MySQL | Web Development
+
+---
+
+## ⭐ Highlights
+
+✔ AI-powered ATS  
+✔ Real-world recruitment system  
+✔ Ollama LLM integration  
+✔ Secure role-based access  
+✔ Production-level architecture
